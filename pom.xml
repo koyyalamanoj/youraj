@@ -35,11 +35,12 @@
   </configuration>
 </plugin>
           <plugin>
-  <groupId>org.apache.maven.plugins</groupId>
-  <artifactId>maven-surefire-plugin</artifactId>
-  <configuration>
-    <testFailureIgnore>true</testFailureIgnore>
-  </configuration>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.19.1</version>
+    <configuration>
+        <testFailureIgnore>true</testFailureIgnore>
+    </configuration>
 </plugin>
         </plugins>
   </build>
@@ -50,6 +51,10 @@
               <name>Spring Framework Maven Release Repository</name>
               <url>http://maven.springframework.org/release</url>
         </repository>
+       <repository>
+      <id>forplay-legacy</id>
+      <url>http://forplay.googlecode.com/svn/mavenrepo</url>
+    </repository>
         <repository>
               <id>Appid</id>
               <name>AppName</name>
